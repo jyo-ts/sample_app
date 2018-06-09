@@ -3,7 +3,8 @@ Rails.application.routes.draw do
     :registrations => "registrations"
   }
   
-  resources :users, only: [:show]
+  resources :users, only: [:show, :index]
+  
   
   root  'static_pages#home'
  
